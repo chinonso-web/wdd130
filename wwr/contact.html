@@ -6,11 +6,10 @@
         <meta name="description" content="Chinos Water Rafting Company - You can contact us for more information about our rafting trips.">
         <meta name="keywords" content="locations, contact-us, adventure, outdoor activities">
         <meta name="author" content="Ezekwe Chinonso">
-        <link rel="stylesheet" href="styles/rafting.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Rafting.css">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
         <title>Rafting-Company Contact</title>
     </head>
     <body>
@@ -18,52 +17,68 @@
             <header class="header">
                 <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-splash.png" alt="">
                 <nav>
-                    <a href="index.html">Index</a>
+                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="trips.html">Trips</a>
+                    <a href="trip.html">Trips</a>
                     <a href="contact.html">Contact</a>
                 </nav>
             </header>
-            <main>
-                
-                <h2>Company Information Includes:</h2>
-                <div class="company-info">
-                    <ul class="company-details ">
-                        <li>Contact Number: (123) 456-7890</li>
-                        <li>Email: info@chinosrafting.com</li>
-                        <li>Address: 123 Rafting Rd, Adventure City, CA</li>
-                    </ul>
+            <main class="contact-main">
+                <h1 class="title">Company Information Includes:</h1>
+                <div class="contact-container">
+                    <div class="company-info">
+                        <ul class="company-details ">
+                            <li>Contact Number: (123) 456-7890</li>
+                            <li>Email: info@chinosrafting.com</li>
+                            <li>Address: 123 Rafting Rd, Adventure City, CA</li>
+                        </ul>
+                    </div>
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33840.977054771836!2d7.027012349061859!3d5.5084163909566914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259980202a4a1%3A0x2b97fd8924660eb1!2sOwerri%2C%20Imo!5e0!3m2!1sen!2sng!4v1754225126460!5m2!1sen!2sng" width="200" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <h2>Company's Prestigious Employees</h2>
-                <div class="Employees-img">
-                    <img src="images/rafting-image2.jpg" width="200" height="200" alt="Employees image">
-                    <img src="images/rafting-image4.jpg" width="200" height="200" alt="Employees">
-                    <img src="images/rafting-image5.jpg" width="200" height="200" alt="Employees">
+                <div class="employees-img">
+                    <img class="imageA" src="images/rafting-image2.jpg" alt="Employees image">
+                    <img class="imageB" src="images/rafting-image6.jpg" alt="Employees">
+                    <img class="imageC" src="images/rafting-image5.jpg" alt="Employees">
                 </div>
-                <form action="">
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <div class="form-item column2">
-                            <label for="Fullname">Username:</label>
-                            <input type="text" id="Fullname" name="Fullname">
+                <form autocomplete="off" action="">
+                    <div class="contact-grid">
+                        <h1>Contact Information</h1>
+                        <div class="container-aa">
+                            <div class="contact-l">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="contact-l">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>  
                         </div>
-                        <div class="form-item column2">
-                            <label for="Useremail">Useremail:</label>
-                            <input type="email" id="Useremail" name="Useremail">
+                        <div class="container-bb">
+                            <p>Purpose of the message:</p>
+                            <div class="radio-contact">
+                                <label for="general">General Inquiry</label>
+                                <input type="radio" id="general" name="inquiry" value="general">
+                            </div>
+                            <div class="radio-contact">
+                                <label for="reservation">Reservation Question</label>
+                                <input type="radio" id="reservation" name="inquiry" value="reservation">
+                            </div>
+                            <div class="radio-contact">
+                                <label for="website">Website Suggestion</label>
+                                <input type="radio" id="website" name="inquiry" value="website">
+                            </div>
+                            <div class="radio-contact">
+                                <label for="text">Message</label>
+                                <textarea name="message" id="text" placeholder="type......."></textarea>
+                            </div>
+                            <div class="radio-contact">
+                                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                            </div>
+                            <button type="submit"> Submit</button>
                         </div>
-                        <div>
-                            <label for="Purpose">Purpose of Message</label>
-                                <input type="radio" name="Purpose" value="inquiry"><option value=""></option>General Inquiry</option>
-                                <input type="radio" name="Purpose" value="feedback"><option value=""></option>Reservation Question</option>
-                                <input type="radio" name="Purpose" value="complaint"><option value=""></option>Website Suggestion</option>
-                            <label for="Message">Message</label>
-                                <textarea id="Message" name="Message" placeholder="Enter your message here..."></textarea>
-                        </div>  
-                        <label for="subscribe">Please subscribe to our newsletter:</label>
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <button type="submit">Submit</button>
-                    </fieldset>
+                    </div>
                 </form>
             </main>
             <footer class="footer-container">
